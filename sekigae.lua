@@ -1,9 +1,9 @@
 --[[ 
 # Name
-Sekigae program with Lua/Luajit for paperboy&co fresher.
+Sekigae program with Lua/LuaJIT for paperboy&co fresher.
 
 # Compatibility
-It works with both of lua and luajit
+It works with both of Lua and LuaJIT
 
 # Notes
 install `luarocks install inspect` before use.
