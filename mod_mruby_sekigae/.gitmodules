@@ -1,0 +1,3 @@
+[submodule "mod_mruby"]
+  path = mod_mruby
+  url = git://github.com/matsumoto-r/mod_mruby.git
