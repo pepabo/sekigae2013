@@ -5,6 +5,7 @@
     <script language="VBScript">
     <![CDATA[
 Option Explicit
+'Usage: Move to your desktop and double click it!
 
 Dim members : members = Array("おっくん","きたけー","たけお","ぐっさん")
 Randomize
