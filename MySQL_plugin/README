@@ -1,0 +1,8 @@
+$ tar xzf mysql-5.5.31.tar.gz
+$ mv <sekigae>/MySQL_plugin mysql-5.5.31/plugin/sekigae
+$ cd mysql-5.5.31
+$ cmake .
+$ make
+$ cp plugin/sekigae.so <mysql_plugin_dir>/
+mysql> INSTALL PLUGIN sekigae SONAME 'sekigae.so';
+mysql> SELECT * FROM information_schema.sekigae;
