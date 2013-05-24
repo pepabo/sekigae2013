@@ -1,3 +1,4 @@
+(random t)
 (message "%s"
          (sort '("たけお" "きたけー" "ぐっさん" "おっくん")
                '(lambda (a b)
