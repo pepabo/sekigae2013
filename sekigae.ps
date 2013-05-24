@@ -1,0 +1,18 @@
+%!
+/inch {72 mul} bind def
+/sheetwidth   8.27 inch def
+/sheetheight 11.64 inch def
+/Courier 24 selectfont
+
+/xmax sheetwidth  cvi 24 8 mul sub def
+/ymax sheetheight cvi 24 sub def
+
+/xrand { rand xmax mod } def
+/yrand { rand ymax mod } def
+
+/newcomers [(okkun) (keoken) (kitak) (gussan)] def
+
+usertime realtime add srand
+newcomers aload length { xrand yrand moveto show } repeat
+
+showpage
