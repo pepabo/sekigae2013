@@ -177,7 +177,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:526.000000</string>
+				<string>287.000000:520.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Japanese.lproj/main.nib</string>
 			</dict>
@@ -239,7 +239,7 @@ chomp($input = &lt;STDIN&gt;);
 @list = split(/,/, $input);
 print "それでは、席替え結果を発表します・・・。";
 print join("・・・", shuffle(@list));
-print "以上。";</string>
+print "・・・以上。";</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -352,7 +352,7 @@ print "以上。";</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:344.000000</string>
+				<string>287.000000:338.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Japanese.lproj/main.nib</string>
 			</dict>
@@ -455,7 +455,7 @@ print "以上。";</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:123.000000</string>
+				<string>287.000000:155.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Speak Text.action/Contents/Resources/Japanese.lproj/main.nib</string>
 			</dict>
@@ -465,14 +465,14 @@ print "以上。";</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>04789871-6BD1-4289-B0B4-D681E172E2B1</key>
+		<key>122506E9-70CE-49D0-B199-4201ECB25554</key>
 		<dict>
 			<key>from</key>
 			<string>1C711E9E-906B-4117-AE90-F17082A5AA51 - 1C711E9E-906B-4117-AE90-F17082A5AA51</string>
 			<key>to</key>
 			<string>9930C986-4C7F-41F2-BED0-EA96E77BB1D1 - 9930C986-4C7F-41F2-BED0-EA96E77BB1D1</string>
 		</dict>
-		<key>A4BFEAD5-4503-40FD-88A0-62ECD0FB6F3A</key>
+		<key>8451D0BA-5188-4427-AB0D-8E015919E3E5</key>
 		<dict>
 			<key>from</key>
 			<string>9930C986-4C7F-41F2-BED0-EA96E77BB1D1 - 9930C986-4C7F-41F2-BED0-EA96E77BB1D1</string>
