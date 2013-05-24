@@ -17,6 +17,9 @@ https://github.com/y-ken/paperboy-sekigae
 # References
 * http://en.wikipedia.org/wiki/Fisher-Yates_shuffle
 * http://www.gammon.com.au/forum/?id=9908
+
+# Tips
+[http://y-ken.hatenablog.com/entry/macosx-install-lua-luajit-luarocks](The Guide to install Lua/LuaJIT for Mac OSX with brew.)
 ]]
 
 math.randomseed(os.time())
