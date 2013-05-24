@@ -15,7 +15,7 @@ global _start
         
 _start:
         mov     si, 0
-        mov     eax, 0x0007
+        mov     eax, 0x0003
         call    sgenrand
 
 loop:   
@@ -30,12 +30,16 @@ loop:
         cmp     eax, 3
         jz      keoken
 return: 
-        inc     si
-        cmp     si, 4
+        cmp     si, 15
         jb      loop
         jmp     exit
         
 okkun:
+        mov     bp, si
+        and     bp, 1
+        cmp     bp, 1
+        jz      loop
+        add     si, 1
         mov     ecx, name0
         mov     edx, len0
         mov     eax, 4
@@ -44,6 +48,11 @@ okkun:
         jmp     return
 
 kitak:
+        mov     bp, si
+        and     bp, 2
+        cmp     bp, 2
+        jz      loop
+        add     si, 2
         mov     ecx, name1
         mov     edx, len1
         mov     eax, 4
@@ -52,6 +61,11 @@ kitak:
         jmp     return
         
 gussan:
+        mov     bp, si
+        and     bp, 4
+        cmp     bp, 4
+        jz      loop
+        add     si, 4
         mov     ecx, name2
         mov     edx, len2
         mov     eax, 4
@@ -60,6 +74,11 @@ gussan:
         jmp     return
         
 keoken:
+        mov     bp, si
+        and     bp, 8
+        cmp     bp, 8
+        jz      loop
+        add     si, 8
         mov     ecx, name3
         mov     edx, len3
         mov     eax, 4
