@@ -3,7 +3,7 @@ MacOSXのAutomatorで席替えプログラムを作ってみました。
 
 ## 概要
 
-以下の処理を行います
+以下の処理を行います。  
 
 1. 文字入力を受け付ける
 2. Perlでランダム処理する
@@ -39,7 +39,8 @@ MountainLionで動作を確認していますが、以下のOSで動くはずで
 
 ## 編集方法
 
-Automator.app を起ち上げて、それで開いてください。
+Automator.app を起ち上げて、それで開いてください。  
+平文のソースコードは `sekigae.app/Contents/document.wflow` にあります。
 ![workflow](workflow.png)
 
 ## 制作者
