@@ -1,7 +1,7 @@
-using UnityEngine;
-using System.Collections;
+    using UnityEngine;
+    using System.Collections;
 
-public class Sekigaekun : MonoBehaviour {
+    public class Sekigaekun : MonoBehaviour {
     const int LEFT = -700;
     const int RIGHT = 700;
 
@@ -17,20 +17,20 @@ public class Sekigaekun : MonoBehaviour {
     {
         speed = Random.Range(4, 10);
     }
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animator = GetComponent<Animator>();
 
         direction = Random.Range(0, 2) == 0 ? 1 : -1;
         animator.SetInteger("dir", direction);
-	}
+    }
 	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
         if (isSearchStart) { Search(); }
         transform.localPosition += Vector3.right * speed * direction;
         OutLineCheck();
-	}
+    }
 
     private void OutLineCheck()
     {

@@ -1,7 +1,7 @@
-using UnityEngine;
-using System.Collections;
+    using UnityEngine;
+    using System.Collections;
 
-public class StopButton : MonoBehaviour {
+    public class StopButton : MonoBehaviour {
 
     private ArrayList arrivedPosition = new ArrayList();
     public Sekigaekun[] sekigaes;
@@ -10,13 +10,13 @@ public class StopButton : MonoBehaviour {
     void Awake() {
         arrivedPosition.AddRange(new int[] { -700, -235, 230, 700 });
     }
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         label = GetComponentInChildren<UILabel>();
-	}
+    }
 	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 
         bool isAlldead = true;
         foreach (var n in sekigaes) 
@@ -24,12 +24,12 @@ public class StopButton : MonoBehaviour {
             if (n != null) { isAlldead = false; break; }
         }
         if (isAlldead) { label.text = "done"; }
-	}
+    }
 
     void StopFreeWalking()
     {
         var sekigaeArray = SekigaeLogic.Sekigsae(arrivedPosition);
-
+  
         for (int i = 0; i < sekigaes.Length; i++)
         {
             sekigaes[i].SetArivved((int)sekigaeArray[i]);
