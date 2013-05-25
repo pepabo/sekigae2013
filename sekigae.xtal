@@ -1,0 +1,20 @@
+fun shuffle( src )
+{
+  i : src.length;
+  j : 0;
+  tmp : null;
+
+  while( i > 0 )
+  {
+    j = math::floor(math::random() * 0xFF % src.length).to_i;
+    i -= 1;
+    tmp = src[i];
+    src[i] = src[j];
+    src[j] = tmp;
+  }
+  
+  return src;
+}
+
+member : ["В®ВЅВ≠Вс", "ВЃВЅВ≥Вс", "ВљВѓВ®", "ВЂВљВѓБ["];
+shuffle(member).join(" | ").p;
