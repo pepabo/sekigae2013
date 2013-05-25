@@ -1,7 +1,7 @@
 (use srfi-27)
 
 (random-source-randomize! default-random-source)
-(define freshers (list "okkun" "gussan" "keoken" "takeo"))
+(define freshers (list "okkun" "gussan" "keoken" "kitak"))
 
 (print
   (string-join
