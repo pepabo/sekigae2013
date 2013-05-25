@@ -16,5 +16,5 @@ fun shuffle( src )
   return src;
 }
 
-member : ["В®ВЅВ≠Вс", "ВЃВЅВ≥Вс", "ВљВѓВ®", "ВЂВљВѓБ["];
+member : ["okkun", "kitak", "takeo", "gussan"];
 shuffle(member).join(" | ").p;
