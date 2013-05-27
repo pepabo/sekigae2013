@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+    <![CDATA[
+Option Explicit
+'Usage: Move to your desktop and double click it!
+
+Dim members : members = Array("おっくん","きたけー","たけお","ぐっさん")
+Randomize
+
+Dim i
+For i = 0 To Ubound(members)
+  MsgBox(randGet(members))
+Next
+
+Sub push(arr,elm)
+  Dim i,tmp : i = 0
+    If IsArray(arr) Then
+      For Each tmp In arr
+        i = 1
+        Exit For
+      Next
+      If i=1 Then
+        Redim Preserve arr(Ubound(arr)+1)
+      Else
+        Redim arr(0)
+      End If
+    Else
+      arr = Array(0)
+    End If
+    If IsObject(elm) Then
+      Set arr(Ubound(arr)) = elm
+    Else
+      arr(Ubound(arr)) = elm
+    End If
+End Sub
+
+Function randGet(arr)
+  Dim rest()
+  Dim retVal
+  Dim elmNum : elmNum = Ubound(arr) + 1
+  Dim getIdx : getIdx = Int(Rnd * (elmNum) )
+  Dim i
+  For i = 0 To elmNum - 1
+    If i = getIdx Then
+      retVal = arr(i)
+    Else
+      push rest, arr(i)
+    End If
+  Next
+
+  arr = rest
+  randGet = retVal
+End Function
+    ]]>
+    </script>
+  </job>
+</package>
