@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{document} 
+
+\pgfmathsetseed{1111}
+
+\newcommand*{\Rnd}[0]{
+  \pgfmathsetmacro{\Ra}{random(4) - 1}
+}
+
+\def\myarray{{"おっくん", "きたけー", "ぐっさん" ,"けおけん"}}
+\noindent\foreach \i in {0,...,10}{\Rnd\pgfmathparse{\myarray[\Ra]}\pgfmathresult\\}
+
+\end{document} 
