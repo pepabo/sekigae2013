@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4227C921750525A00FE3BA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4227C901750525A00FE3BA3 /* InfoPlist.strings */; };
+		C4227C941750525A00FE3BA3 /* Sekigae.c in Sources */ = {isa = PBXBuildFile; fileRef = C4227C931750525A00FE3BA3 /* Sekigae.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4227C881750525A00FE3BA3 /* Sekigae.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sekigae.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4227C8C1750525A00FE3BA3 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		C4227C8F1750525A00FE3BA3 /* Sekigae-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sekigae-Info.plist"; sourceTree = "<group>"; };
+		C4227C911750525A00FE3BA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4227C931750525A00FE3BA3 /* Sekigae.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Sekigae.c; sourceTree = "<group>"; };
+		C4227C951750525A00FE3BA3 /* Sekigae-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sekigae-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4227C831750525A00FE3BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4227C7B1750525A00FE3BA3 = {
+			isa = PBXGroup;
+			children = (
+				C4227C8D1750525A00FE3BA3 /* Sekigae */,
+				C4227C8A1750525A00FE3BA3 /* Frameworks */,
+				C4227C891750525A00FE3BA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4227C891750525A00FE3BA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4227C881750525A00FE3BA3 /* Sekigae.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4227C8A1750525A00FE3BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4227C8B1750525A00FE3BA3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4227C8B1750525A00FE3BA3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4227C8C1750525A00FE3BA3 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C4227C8D1750525A00FE3BA3 /* Sekigae */ = {
+			isa = PBXGroup;
+			children = (
+				C4227C931750525A00FE3BA3 /* Sekigae.c */,
+				C4227C8E1750525A00FE3BA3 /* Supporting Files */,
+			);
+			path = Sekigae;
+			sourceTree = "<group>";
+		};
+		C4227C8E1750525A00FE3BA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4227C8F1750525A00FE3BA3 /* Sekigae-Info.plist */,
+				C4227C901750525A00FE3BA3 /* InfoPlist.strings */,
+				C4227C951750525A00FE3BA3 /* Sekigae-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C4227C841750525A00FE3BA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C4227C871750525A00FE3BA3 /* Sekigae */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4227C981750525A00FE3BA3 /* Build configuration list for PBXNativeTarget "Sekigae" */;
+			buildPhases = (
+				C4227C821750525A00FE3BA3 /* Sources */,
+				C4227C831750525A00FE3BA3 /* Frameworks */,
+				C4227C841750525A00FE3BA3 /* Headers */,
+				C4227C851750525A00FE3BA3 /* Resources */,
+				C4227C861750525A00FE3BA3 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sekigae;
+			productName = Sekigae;
+			productReference = C4227C881750525A00FE3BA3 /* Sekigae.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4227C7D1750525A00FE3BA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C4227C801750525A00FE3BA3 /* Build configuration list for PBXProject "Sekigae" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4227C7B1750525A00FE3BA3;
+			productRefGroup = C4227C891750525A00FE3BA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4227C871750525A00FE3BA3 /* Sekigae */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4227C851750525A00FE3BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4227C921750525A00FE3BA3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		C4227C861750525A00FE3BA3 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4227C821750525A00FE3BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4227C941750525A00FE3BA3 /* Sekigae.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4227C901750525A00FE3BA3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4227C911750525A00FE3BA3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4227C961750525A00FE3BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C4227C971750525A00FE3BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C4227C991750525A00FE3BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sekigae/Sekigae-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "Sekigae/Sekigae-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = org.dyndns.hiboma.Sekigae;
+				MODULE_START = Sekigae_start;
+				MODULE_STOP = Sekigae_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		C4227C9A1750525A00FE3BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sekigae/Sekigae-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "Sekigae/Sekigae-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = org.dyndns.hiboma.Sekigae;
+				MODULE_START = Sekigae_start;
+				MODULE_STOP = Sekigae_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4227C801750525A00FE3BA3 /* Build configuration list for PBXProject "Sekigae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4227C961750525A00FE3BA3 /* Debug */,
+				C4227C971750525A00FE3BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4227C981750525A00FE3BA3 /* Build configuration list for PBXNativeTarget "Sekigae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4227C991750525A00FE3BA3 /* Debug */,
+				C4227C9A1750525A00FE3BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4227C7D1750525A00FE3BA3 /* Project object */;
+}
