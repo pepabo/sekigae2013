@@ -1,0 +1,28 @@
+// 席替え for NekoVM [http://nekovm.org/] version
+//
+// Usage:
+//   $ nekoc sekigae.neko
+//   $ neko sekigae.n
+
+// 標準ライブラリの使い方，もっとよい方法がありそうだけどわからなかった
+var int32_to_int    = $loader.loadprim("std@int32_to_int", 1);
+var int32_and       = $loader.loadprim("std@int32_and", 2);
+var random_new      = $loader.loadprim("std@random_new", 0);
+var random_set_seed = $loader.loadprim("std@random_set_seed", 2);
+var random_int      = $loader.loadprim("std@random_int", 2);
+var date_now        = $loader.loadprim("std@date_now", 0);
+
+var rand = random_new();
+random_set_seed(rand, int32_to_int(int32_and(date_now(), 0xffff)));
+
+var members = $array("おっくん", "きたけー", "たけお", "ぐっさん");
+
+while ($asize(members) > 0) {
+    var n = $asize(members);
+    var k = random_int(rand, n);
+    $print(members[k] + "\n");
+
+    var a1 = $asub(members, 0, k);
+    var a2 = $asub(members, k+1, n-k-1);
+    members = $aconcat($array(a1, a2));
+}
