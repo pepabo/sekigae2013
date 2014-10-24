@@ -1,21 +1,20 @@
-#include <vector>
+#include <random>
+#include <algorithm>
+#include <array>
 #include <string>
 #include <iostream>
 #include <iterator>
-#include <algorithm>
 
-using namespace std;
+int main()
+{
+    using std::begin;
+    using std::endl;
 
-int main(int argc, char **argv) {
-    vector<string> freshers;
-    freshers.push_back("おっくん");
-    freshers.push_back("ぐっさん");
-    freshers.push_back("たけお");
-    freshers.push_back("きたけー");
+    std::array<std::string, 4> freshers = {{"おっくん", "ぐっさん", "たけお", "きたけー"}};
 
-    srand(static_cast<size_t>(time(NULL)));
-    random_shuffle(freshers.begin(), freshers.end());
-    copy(freshers.begin(), freshers.end(), ostream_iterator<string>(cout, " | "));
+    std::shuffle(begin(freshers), end(freshers), std::default_random_engine{std::random_device{}()});
+    std::copy(begin(freshers), end(freshers)-1, std::ostream_iterator<std::string>(std::cout, " | "));
+    std::cout << freshers.back() << std::endl;
 
     return 0;
 }
